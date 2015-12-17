@@ -96,7 +96,7 @@ public class WalkerReleaseRemoverBackend
         new DefaultWalkerContext(repository, new ResourceStoreRequest("/"),
             determineFilter(repositoryTarget));
 
-    ctxMain.getContext().put(DeleteOperation.DELETE_OPERATION_CTX_KEY, DeleteOperation.MOVE_TO_TRASH);
+    ctxMain.getContext().put(DeleteOperation.DELETE_OPERATION_CTX_KEY, DeleteOperation.DELETE_PERMANENTLY);
 
     ctxMain.getProcessors().add(new ReleaseRemovalWalkerProcessor(repository, request, result, repositoryTarget));
 
