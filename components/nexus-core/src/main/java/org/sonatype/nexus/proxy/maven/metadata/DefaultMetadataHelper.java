@@ -46,7 +46,7 @@ public class DefaultMetadataHelper
   private final DeleteOperation operation;
 
   public DefaultMetadataHelper(Logger logger, MavenRepository repository) {
-    this(logger, repository, DeleteOperation.MOVE_TO_TRASH);
+    this(logger, repository, DeleteOperation.DELETE_PERMANENTLY);
   }
 
   public DefaultMetadataHelper(Logger logger, MavenRepository repository, DeleteOperation operation) {
