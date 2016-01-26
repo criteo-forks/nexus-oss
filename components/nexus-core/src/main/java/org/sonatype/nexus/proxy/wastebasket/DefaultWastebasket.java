@@ -74,7 +74,7 @@ public class DefaultWastebasket
 
   protected DeleteOperation getDefaultDeleteOperation() {
     final String defaultOperationString = SystemPropertiesHelper.getString(
-        DEFAULT_DELETE_OPERATION_KEY, DeleteOperation.MOVE_TO_TRASH.name());
+        DEFAULT_DELETE_OPERATION_KEY, DeleteOperation.DELETE_PERMANENTLY.name());
     try {
       return DeleteOperation.valueOf(defaultOperationString);
     }
